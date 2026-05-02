@@ -32,10 +32,23 @@ npm run dev
 | Pro  | $9/mo or $79/yr |
 
 ## Deploy
-1. Push to GitHub
-2. Import in Vercel
-3. Add env vars
+1. Push to `main` (CI runs lint/build checks)
+2. Import the repo in Vercel
+3. Configure the environment variables listed below
 4. Deploy
+
+## Environment Variables
+Set these in `.env.local` for development and in Vercel for production:
+
+- `NEXT_PUBLIC_APP_NAME`
+- `NEXT_PUBLIC_APP_URL`
+- `OPENAI_API_KEY`
+- `STRIPE_SECRET_KEY`
+- `STRIPE_WEBHOOK_SECRET`
+- `NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY`
+- `STRIPE_PRICE_PRO_MONTHLY`
+- `STRIPE_PRICE_PRO_YEARLY`
+- `DATABASE_URL`
 
 ## License
 MIT (c) 2026 Aurora Rayes LLC

@@ -2,14 +2,35 @@ name: CI
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
+
 jobs:
-  build:
+  validate:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      NEXT_PUBLIC_APP_URL: http://localhost:3000
+      NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY: pk_test_placeholder
+      STRIPE_SECRET_KEY: sk_test_placeholder
+      STRIPE_WEBHOOK_SECRET: whsec_placeholder
+      OPENAI_API_KEY: sk-test-placeholder
+      DATABASE_URL: postgresql://user:password@localhost:5432/app
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
-      - run: npm ci
-      - run: npm run build
+      - name: Install dependencies
+        run: npm ci --legacy-peer-deps || npm install --legacy-peer-deps
+      - name: Lint
+        run: npm run lint --if-present
+      - name: Typecheck
+        run: npm run typecheck --if-present
+      - name: Check
+        run: npm run check --if-present
+      - name: Test
+        run: npm test --if-present
+      - name: Build
+        run: npm run build --if-present

@@ -1,14 +1,22 @@
 {
-  "id": "app211-sleep-ai",
-  "name": "App211 Sleep AI",
-  "tagline": "AI-powered health solution",
-  "description": "AI-powered app211-sleep-ai application built for Aurora Market. Modern, responsive design with SaaS monetization.",
-  "category": "health",
-  "tags": ["ai", "health"],
-  "url": "https://auroramarket.org/app211-sleep-ai",
-  "demo": "https://21leahcimhtiek-oss.github.io/app211-sleep-ai",
-  "repo": "https://github.com/21leahcimhtiek-oss/app211-sleep-ai",
-  "stack": ["HTML", "CSS", "JavaScript"],
+  "id": "aurora-sleepai",
+  "name": "Aurora Rayes Sleep Agent",
+  "tagline": "Aurora Rayes sleep and wellness solution",
+  "description": "Aurora Rayes Sleep Agent is part of the Aurora Rayes ecosystem: AI sleep optimization guidance with routines, dream journaling, wake planning, and sleep-score coaching. Payments remain disabled by default until configured with live provider credentials.",
+  "category": "sleep and wellness",
+  "tags": [
+    "aurora-rayes",
+    "ai",
+    "sleep"
+  ],
+  "url": "https://aurorarayes.example/products/aurora-sleepai",
+  "demo": "https://21leahcimhtiek-oss.github.io/aurora-sleepai",
+  "repo": "https://github.com/21leahcimhtiek-oss/aurora-sleepai",
+  "stack": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
   "status": "mvp",
   "version": "1.0.0",
   "author": "Aurora Rayes LLC",

@@ -1,28 +1,66 @@
 {
   "products": [
     {
-      "id": "app211-sleep-ai_starter",
-      "name": "App211 Sleep AI Starter",
-      "description": "Get started with App211 Sleep AI",
+      "id": "aurora-sleepai_starter",
+      "name": "Aurora Rayes Sleep Agent Starter",
+      "description": "Starter placeholder plan for Aurora Rayes Sleep Agent",
       "mode": "subscription",
       "prices": [
-        { "id": "starter_monthly", "amount": 1900, "currency": "usd", "interval": "month" },
-        { "id": "starter_annual", "amount": 18900, "currency": "usd", "interval": "year" }
+        {
+          "id": "starter_monthly",
+          "amount": 1900,
+          "currency": "usd",
+          "interval": "month"
+        },
+        {
+          "id": "starter_annual",
+          "amount": 18900,
+          "currency": "usd",
+          "interval": "year"
+        }
       ],
-      "features": ["Core AI features", "5 users", "Email support"]
+      "features": [
+        "Core AI features",
+        "5 users",
+        "Email support"
+      ],
+      "payment_link": "REPLACE_WITH_PAYMENT_LINK_WHEN_PAYMENTS_ENABLED"
     },
     {
-      "id": "app211-sleep-ai_pro",
-      "name": "App211 Sleep AI Pro",
-      "description": "Professional plan for App211 Sleep AI",
+      "id": "aurora-sleepai_pro",
+      "name": "Aurora Rayes Sleep Agent Pro",
+      "description": "Pro placeholder plan for Aurora Rayes Sleep Agent",
       "mode": "subscription",
       "prices": [
-        { "id": "pro_monthly", "amount": 4900, "currency": "usd", "interval": "month" },
-        { "id": "pro_annual", "amount": 47900, "currency": "usd", "interval": "year" }
+        {
+          "id": "pro_monthly",
+          "amount": 4900,
+          "currency": "usd",
+          "interval": "month"
+        },
+        {
+          "id": "pro_annual",
+          "amount": 47900,
+          "currency": "usd",
+          "interval": "year"
+        }
       ],
-      "features": ["All Starter features", "Unlimited users", "Priority support", "Advanced AI", "Custom integrations"]
+      "features": [
+        "All Starter features",
+        "Unlimited users",
+        "Priority support",
+        "Advanced AI",
+        "Custom integrations"
+      ],
+      "payment_link": "REPLACE_WITH_PAYMENT_LINK_WHEN_PAYMENTS_ENABLED"
     }
   ],
   "trial_days": 14,
-  "webhook_events": ["checkout.session.completed", "customer.subscription.updated", "customer.subscription.deleted"]
+  "webhook_events": [
+    "checkout.session.completed",
+    "customer.subscription.updated",
+    "customer.subscription.deleted"
+  ],
+  "payments_enabled_by_default": false,
+  "checkout_url_placeholder": "REPLACE_WITH_CHECKOUT_LINK_WHEN_PAYMENTS_ENABLED"
 }

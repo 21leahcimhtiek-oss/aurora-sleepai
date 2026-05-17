@@ -2,9 +2,9 @@
   "bundles": [
     {
       "id": "aurora-market-bundle",
-      "name": "Aurora Market Bundle",
-      "description": "Complete Aurora Market application suite",
-      "apps": ["app211-sleep-ai"],
+      "name": "Aurora Rayes Bundle",
+      "description": "Complete Aurora Rayes application suite",
+      "apps": ["aurora-sleepai"],
       "discount_percent": 20
     }
   ]
